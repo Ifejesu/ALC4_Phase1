@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="0dp"
+        android:layout_height="@android:dimen/thumbnail_height"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:contentDescription="@string/profile_img"
+        android:src="@drawable/ifejesu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[10]" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo" />
+
+    <TextView
+        android:id="@+id/track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/track"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/track_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/my_track"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/track"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/country"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/track"
+        app:layout_constraintTop_toBottomOf="@+id/track" />
+
+    <TextView
+        android:id="@+id/country_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/my_country"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/track_value"
+        app:layout_constraintTop_toBottomOf="@+id/track_value" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/country"
+        app:layout_constraintTop_toBottomOf="@+id/country" />
+
+    <TextView
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/phone_number"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/slack_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/slack_uname"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tel"
+        app:layout_constraintTop_toBottomOf="@+id/tel" />
+
+    <TextView
+        android:id="@+id/email_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/my_email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/country_value" />
+
+    <TextView
+        android:id="@+id/tel_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/my_tel"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tel"
+        app:layout_constraintTop_toBottomOf="@+id/email_value" />
+
+    <TextView
+        android:id="@+id/slack_uname_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/my_slack_uname"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tel_value"
+        app:layout_constraintTop_toBottomOf="@+id/tel_value" />
+</androidx.constraintlayout.widget.ConstraintLayout>
